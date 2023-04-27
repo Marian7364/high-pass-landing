@@ -1,0 +1,174 @@
+@import '_variables.scss';
+
+.header {
+  &__top__link:hover {
+    color: $colorOrange;
+  }
+
+  &__top__link:focus {
+    padding-right: 5px;
+    color: $colorWhite;
+    background-color: $colorBrown;
+    outline: none;
+  }
+
+  &__top__link:active {
+    padding-right: 0;
+    color: $colorDarkOrange;
+    background: none;
+  }
+
+  &__top__search-input:hover {
+    border-bottom: 1px solid $colorOrange;
+  }
+
+  &__top__search-input:focus {
+    border-bottom: 1px solid $colorOrange;
+    outline: none;
+  }
+
+  &__bottom__burger__link:hover {
+    color: $colorOrange;
+  }
+
+  &__bottom__burger__link:focus {
+    padding-right: 5px;
+    color: $colorWhite;
+    background-color: $colorBrown;
+    outline: none;
+  }
+
+  &__bottom__burger__link:active {
+    padding-right: 0;
+    color: $colorDarkOrange;
+    background: none;
+  }
+
+  &__bottom__link:hover {
+    color: $colorOrange;
+  }
+
+  &__bottom__link:focus {
+    padding-right: 5px;
+    color: $colorWhite;
+    background-color: $colorBrown;
+    outline: none;
+  }
+
+  &__bottom__link:active {
+    padding-right: 0;
+    color: $colorDarkOrange;
+    background: none;
+  }
+}
+
+.works {
+  &__left__btn:hover {
+    background-color: $colorBrown;
+  }
+
+  &__left__btn:focus {
+    background-color: $colorOrange;
+    outline: 3px solid $colorDarkOrange;
+  }
+
+  &__left__btn:active {
+    background-color: $colorDarkOrange;
+  }
+}
+
+.about-us {
+  &__wrapper__input:hover::placeholder {
+    color: $colorOrange;
+  }
+
+  &__wrapper__input:focus {
+    outline: 1px solid $colorOrange;
+  }
+
+  &__wrapper__input:active {
+    outline: none;
+  }
+
+  &__wrapper__btn:hover {
+    background-color: $colorBrown;
+  }
+
+  &__wrapper__btn:focus {
+    background-color: $colorOrange;
+    outline: 3px solid $colorDarkOrange;
+  }
+
+  &__wrapper__btn:active {
+    background-color: $colorDarkOrange;
+  }
+}
+
+.projects {
+  &__photo__btn:hover {
+    background-color: $colorOrange;
+  }
+
+  &__photo__btn:focus {
+    background-color: $colorBrown;
+    border: 3px solid $colorOrange;
+  }
+
+  &__photo__btn:active {
+    background-color: $colorDarkOrange;
+    border: 3px solid $colorDarkOrange;
+  }
+}
+
+.contacts {
+  &__right__input:hover::placeholder {
+    color: $colorOrange
+  }
+
+  &__right__input:focus {
+    outline: 1px solid $colorOrange;
+  }
+
+  &__right__input:active {
+    outline: none;
+  }
+
+  &__right__comment:hover::placeholder {
+    color: $colorOrange;
+  }
+
+  &__right__comment:focus {
+    outline: 1px solid $colorOrange;
+  }
+
+  &__right__comment:active {
+    outline: none;
+  }
+
+  &__right__btn:hover {
+    background-color: $colorBrown;
+  }
+
+  &__right__btn:focus {
+    background-color: $colorOrange;
+    outline: 3px solid $colorDarkOrange;
+  }
+
+  &__right__btn:active {
+    background-color: $colorDarkOrange;
+  }
+}
+
+.footer {
+  &__social-media__svg:hover path {
+    fill: $colorOrange
+  }
+
+  &__social-media__svg:focus path {
+    fill: $colorBrown;
+  }
+
+  &__social-media__svg:active path {
+    fill: $colorDarkOrange
+  }
+}

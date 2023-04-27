@@ -1,0 +1,348 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+.header {
+  background-color: $colorLightBlack;
+
+  &__top__input--unactive {
+    position: absolute;
+    opacity: 0;
+    right: 40px;
+    transition: opacity .3s ease;
+  }
+
+  &__top__button--unactive {
+    @include clearButtonStyles;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity .3s ease;
+  }
+
+  &__bottom--unactive {
+    @include setContainerBaseStyles;
+    display: none;
+    padding: 11px 27px 12px 27px;
+    background-color: $colorTooDarkGrey;
+    transition: all .4s ease;
+
+    @media (max-width: $screen-sm) {
+      display: block;
+    }
+
+    @media (max-width: $screen-xsm) {
+      padding: 14px 27px 13px 21px;
+    }
+  }
+
+  &__bottom__button--unactive {
+    @include clearButtonStyles;
+    position: absolute;
+    opacity: 0;
+    width: 21px;
+    height: 19px;
+    transition: opacity .4s ease;
+  }
+
+  &__bottom__burger--unactive {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .4s ease;
+
+    @media (max-width: $screen-xsm) {
+      position: relative;
+      opacity: 1;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+  }
+
+  &__bottom__burger-line {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: $colorWhite;
+  }
+
+  &__bottom__burger-line:nth-child(2) {
+    top: 8px;
+  }
+
+  &__bottom__burger-line:nth-child(3) {
+    top: 16px;
+    width: 10px;
+  }
+
+  &__bottom__list--unactive {
+    @include clearListStyles;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .4s ease;
+  }
+
+  &__bottom__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__bottom__item:nth-child(4) {
+    position: relative;
+    left: -3px;
+  }
+
+  &__bottom__item:nth-child(1) {
+    width: 79px
+  }
+
+  &__bottom__item:nth-child(2) {
+    width: 122px
+  }
+
+  &__bottom__item:nth-child(3) {
+    width: 60px;
+  }
+
+  &__bottom__item:nth-child(4) {
+    width: 133px;
+  }
+
+  &__bottom__item:nth-child(5) {
+    position: relative;
+    left: -3px;
+    margin-bottom: 214px;
+    width: 82px;
+  }
+
+  &__bottom__link {
+    padding-left: 5px;
+    font-family: 'TT Firs Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $colorWhite;
+    transition: all .3s ease;
+  }
+
+  &__bottom__phone--unactive {
+    position: absolute;
+    top: 1px;
+    left: -1px;
+    align-items: center;
+    font-family: 'TT Firs Neue';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $colorOrange;
+    opacity: 0;
+  }
+
+  &__bottom__burger__list--unactive {
+    @include clearListStyles;
+    display: none;
+
+    @media (max-width: $screen-sm) {
+      display: flex;
+    }
+
+    @media (max-width: $screen-xsm) {
+      display: none;
+    }
+  }
+
+  &__bottom__burger__item:not(:last-child) {
+    margin-right: auto;
+  }
+
+  &__bottom__burger__item:nth-child(1) {
+    width: 79px
+  }
+
+  &__bottom__burger__item:nth-child(2) {
+    width: 122px
+  }
+
+  &__bottom__burger__item:nth-child(3) {
+    width: 60px;
+  }
+
+  &__bottom__burger__item:nth-child(4) {
+    width: 133px;
+  }
+
+  &__bottom__burger__item:nth-child(5) {
+    width: 82px;
+  }
+
+  &__bottom__burger__link {
+    padding-left: 5px;
+    font-family: 'TT Firs Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $colorWhite;
+    transition: all .3s ease;
+  }
+
+  &__top {
+    @include setContainerBaseStyles;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 24px;
+
+    @media (max-width: $screen-md) {
+      padding: 26px 31px 27px 31px;
+    }
+
+    @media (max-width: $screen-sm) {
+      padding: 28px 27px 26px 28px;
+    }
+
+    @media (max-width: $screen-xsm) {
+      padding: 26px 21px;
+    }
+  }
+
+  &__top__img {
+    margin-right: 134px;
+
+    @media (max-width: $screen-md) {
+      margin-right: 75px;
+      width: 167px;
+    }
+
+    @media (max-width: $screen-sm) {
+      margin-right: auto;
+      width: 164px;
+    }
+
+    @media (max-width: $screen-xsm) {
+      width: 111px;
+    }
+  }
+
+  &__top__list {
+    @include clearListStyles;
+    display: flex;
+    margin-right: auto;
+
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+  }
+
+  &__top__item {
+    display: inline-block;
+    margin-right: 69px;
+
+    @media (max-width: $screen-md) {
+      margin-right: 23px;
+    }
+  }
+
+  &__top__item:nth-child(1) {
+    width: 79px
+  }
+
+  &__top__item:nth-child(2) {
+    width: 122px
+  }
+
+  &__top__item:nth-child(3) {
+    width: 60px;
+  }
+
+  &__top__item:nth-child(4) {
+    width: 133px;
+  }
+
+  &__top__item:nth-child(5) {
+    width: 82px;
+  }
+
+  &__top__link {
+    padding-left: 5px;
+    font-family: 'TT Firs Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $colorWhite;
+    transition: all .3s ease;
+  }
+
+  &__top__search {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: $colorLightBlack;
+    transition: all .3s ease;
+
+    @media (max-width: $screen-md) {
+      right: 31px;
+    }
+
+    @media (max-width: $screen-sm) {
+      right: 28px;
+    }
+
+    @media (max-width: $screen-xsm) {
+      right: 21px;
+    }
+  }
+
+  &__top__search-input {
+    margin-right: 9px;
+    border: none;
+    width: 308px;
+    font-family: 'TT Firs Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $colorWhite;
+    background: none;
+    border-bottom: 1px solid $colorLightGrey;
+    transition: all .3s ease;
+
+    @media (max-width: $screen-xsm) {
+      width: 248px;
+    }
+  }
+
+  &__top__search-input::placeholder {
+    font-family: 'TT Firs Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $colorLightGrey;
+  }
+
+  &__top__search__icon {
+    @include clearButtonStyles;
+    cursor: pointer;
+    position: relative;
+    opacity: 1;
+    transition: opacity .3s ease;
+
+    @media (max-width: $screen-md) {
+      position: relative;
+      top: 2px;
+    }
+
+    @media (max-width: $screen-sm) {
+      top: 0;
+    }
+
+    @media (max-width: $screen-xsm) {
+      top: 1px;
+    }
+  }
+
+  &__top__search__svg {
+    @media (max-width: $screen-xsm) {
+      width: 20px;
+    }
+  }
+}

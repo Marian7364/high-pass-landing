@@ -1,0 +1,138 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+.footer {
+  background-color: $colorLightBlack;
+
+  &__container-top {
+    @include setContainerBaseStyles;
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 19px;
+
+    @media (max-width: $screen-md) {
+      padding: 24px 31px 23px 31px;
+    }
+
+    @media (max-width: $screen-sm) {
+      padding: 24px 27px 22px 27px;
+    }
+
+    @media (max-width: $screen-xsm) {
+      padding: 30px 25px 29px 25px;
+    }
+  }
+
+  &__container-bottom {
+    display: none;
+    background-color: $colorTooDarkGrey;
+
+    @media (max-width: $screen-xsm) {
+      display: block;
+      margin: 0 auto;
+      padding: 14px 25px 14px 25px;
+    }
+  }
+
+  &__logo {
+    margin-right: 201px;
+
+    @media (max-width: $screen-md) {
+      margin-right: 133px;
+    }
+
+    @media (max-width: $screen-sm) {
+      margin-right: auto;
+    }
+
+    @media (max-width: $screen-xsm) {
+      display: none;
+    }
+  }
+
+  &__logo-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo__img {
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+    @media (max-width: $screen-md) {
+      margin-top: 6px;
+      width: 166px;
+    }
+  }
+
+  &__logo__bottom__img {
+    margin-bottom: 5px;
+    width: 110px;
+  }
+
+  &__logo__desc {
+    margin: 0;
+    font-family: 'TT Firs Neue', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: $colorLightGrey;
+
+    @media (max-width: $screen-sm) {
+      width: 240px;
+    }
+  }
+
+  &__logo__bottom__desc {
+    margin: 0;
+    font-family: 'TT Firs Neue', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 11px;
+    color: $colorLightGrey;
+  }
+
+  &__quote {
+    margin: 0 auto 0 0;
+    max-width: 361px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: $colorGrey;
+
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+  }
+
+  &__social-media {
+    @media (max-width: $screen-xsm) {
+      margin: 0 auto;
+    }
+  }
+
+  &__social-media__title {
+    margin: 0;
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: $colorGrey;
+    text-align: center;
+  }
+
+  &__social-media__list {
+    @include clearListStyles;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__social-media__item:nth-child(1) {
+    margin-right: 20px;
+  }
+
+  &__social-media__svg path {
+    transition: all .3s ease;
+  }
+}

@@ -1,0 +1,98 @@
+@import '_variables.scss';
+
+@mixin clearListStyles {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin clearButtonStyles {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+@mixin setContainerBaseStyles {
+  margin: 0 auto;
+  max-width: 1290px;
+}
+
+@mixin setTitleBaseStyles {
+  margin: 0;
+  font-family: 'TT Firs Neue', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+
+  @media (max-width: $screen-xsm) {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@mixin setOrangeButtonStyles {
+  padding: 15px 23px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: $colorWhite;
+  background-color: $colorOrange;
+  transition: all .3s ease;
+
+  @media (max-width: $screen-xsm) {
+    padding: 12px 23px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@mixin setTransparentButtonStyles {
+  padding: 12px 15px;
+  border: 3px solid $colorOrange;
+  width: 121px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: $colorWhite;
+  background-color: transparent;
+  transition: all .3s ease;
+
+  @media (max-width: $screen-xsm) {
+    padding: 9px 18px;
+    width: 108px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@mixin setPhotoTagStyles {
+  position: absolute;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $colorWhite;
+  background-color: $colorLightBlack;
+
+  @media (max-width: $screen-xsm) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@mixin setPhoneStyle {
+  font-family: 'TT Firs Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  color: $colorOrange;
+
+  @media (max-width: $screen-xsm) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

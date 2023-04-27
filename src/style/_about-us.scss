@@ -1,0 +1,165 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+.about-us {
+  background-color: $colorLightBlack;
+
+  &__container {
+    @include setContainerBaseStyles;
+    padding-top: 30px;
+    padding-bottom: 69px;
+
+    @media (max-width: $screen-md) {
+      padding: 30px 31px 82px 31px;
+    }
+
+    @media (max-width: $screen-sm) {
+      padding: 30px 27px 62px 27px;
+    }
+
+    @media (max-width: $screen-xsm) {
+      padding: 32px 21px 60px 21px;
+    }
+  }
+
+  &__title {
+    @include setTitleBaseStyles;
+    margin-bottom: 2px;
+    color: $colorWhite;
+
+    @media (max-width: $screen-xsm) {
+      margin-bottom: 1px;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    margin-top: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: $colorGrey;
+
+    @media (max-width: $screen-xsm) {
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+
+  &__wrapper__bg {
+    margin-bottom: 22px;
+    height: 255px;
+    background-image: url('images/about-us-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: $screen-md) {
+      margin-bottom: 21px;
+      height: 332px;
+      background-image: url('images/about-us-img-1024.jpg');
+    }
+
+    @media (max-width: $screen-sm) {
+      margin-bottom: 21px;
+      height: 569px;
+      background-image: url('images/about-us-img-768.jpg');
+    }
+
+    @media (max-width: $screen-xsm) {
+      margin-bottom: 25px;
+      height: 278px;
+      background-image: url('images/about-us-img-320.jpg');
+    }
+  }
+
+  &__wrapper__title {
+    margin: 0;
+    margin-bottom: 13px;
+    font-family: 'TT Firs Neue';
+    font-size: 24px;
+    font-weight: 400;
+    color: $colorWhite;
+
+    @media (max-width: $screen-md) {
+      margin-left: -2px;
+    }
+
+    @media (max-width: $screen-sm) {
+      margin-left: 1px;
+    }
+
+    @media (max-width: $screen-xsm) {
+      margin-bottom: 14px;
+      margin-left: -2px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__wrapper__email {
+    @media (max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__wrapper__input {
+    padding: 15px 23px;
+    margin-right: 25px;
+    border: none;
+    width: 474px;
+    font-family: 'TT Firs Neue';
+    font-size: 16px;
+    line-height: 19px;
+    color: $colorWhite;
+    background-color: $colorTooDarkGrey;
+    transition: all .3s ease;
+
+    @media (max-width: $screen-md) {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 342px;
+    }
+
+    @media (max-width: $screen-xsm) {
+      padding: 11px 23px;
+      width: 278px;
+    }
+  }
+
+  &__wrapper__input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: $colorGrey;
+    transition: all .3s ease;
+
+    @media (max-width: $screen-xsm) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .js-validate-error-label {
+    display: none !important;
+  }
+
+  .js-validate-error-field {
+    border: 1px solid #FF3030 !important;
+  }
+
+  &__wrapper__btn {
+    @include clearButtonStyles;
+    @include setOrangeButtonStyles;
+
+    @media (max-width: $screen-md) {
+      width: 126px;
+    }
+
+    @media (max-width: $screen-xsm) {
+      width: 115px;
+    }
+  }
+}
