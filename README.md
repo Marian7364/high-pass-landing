@@ -12,7 +12,9 @@ $ npm run start
 ```
 
 ## Author
-Marian Roshchupkin &lt;roshchupkin.marian@gmail.com&lt;
+Marian Roshchupkin &lt;roshchupkin.marian@gmail.com&gt;
+
+Updated on: 27 April 2023
 
 ## License
 MIT - see [LICENSE](LICENSE)
