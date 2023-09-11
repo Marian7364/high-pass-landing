@@ -1,0 +1,67 @@
+@import '../../variables';
+
+.contacts {
+  &__container {
+    @media (max-width: $screen-bg) {
+      padding-left: 31px;
+      padding-right: 30px;
+    }
+  }
+
+  &__left {
+    @media (max-width: $screen-bg) {
+      background-image: url('images/map-1024.jpg');
+    }
+  }
+
+  &__left::after {
+    @media (max-width: $screen-bg) {
+      right: 94px;
+    }
+  }
+
+  &__left-wrapper {
+    @media (max-width: $screen-bg) {
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 25px 20px 21px 30px;
+    }
+  }
+
+  &__left__button {
+    .contacts__left__button__svg {
+      @media (max-width: $screen-bg) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  &__left__address {
+    @media (max-width: $screen-bg) {
+      margin-bottom: 0;
+      max-width: 310px;
+    }
+  }
+
+  &__left__break {
+    @media (max-width: $screen-bg) {
+      display: none;
+    }
+  }
+
+  &__left__phone {
+    @media (max-width: $screen-bg) {
+      position: relative;
+      top: 1px;
+      left: 6px;
+    }
+  }
+
+  &__right__input {
+    @media (max-width: $screen-bg) {
+      margin-bottom: 21px;
+    }
+  }
+}

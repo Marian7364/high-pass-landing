@@ -1,0 +1,10 @@
+@import '../../variables';
+
+.about-us {
+  &__wrapper__email {
+    @media (max-width: $screen-md) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

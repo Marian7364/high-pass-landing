@@ -1,0 +1,37 @@
+@import '../../variables';
+
+.about-us {
+  &__container {
+    @media (max-width: $screen-bg) {
+      padding: 30px 31px 82px 31px;
+    }
+  }
+
+  &__wrapper__bg {
+    @media (max-width: $screen-bg) {
+      margin-bottom: 21px;
+      height: 332px;
+      background-image: url('images/about-us-img-1024.jpg');
+    }
+  }
+
+  &__wrapper__title {
+    @media (max-width: $screen-bg) {
+      margin-left: -2px;
+    }
+  }
+
+  &__wrapper__input {
+    @media (max-width: $screen-bg) {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 342px;
+    }
+  }
+
+  &__wrapper__btn {
+    @media (max-width: $screen-bg) {
+      width: 126px;
+    }
+  }
+}

@@ -1,0 +1,108 @@
+@import '../../variables';
+
+.contacts {
+  &__container {
+    @media (max-width: $screen-xsm) {
+      padding: 25px 0 2px 0;
+    }
+  }
+
+  &__title {
+    @media (max-width: $screen-xsm) {
+      margin: 0 0 14px 19px;
+    }
+  }
+
+  &__left {
+    @media (max-width: $screen-xsm) {
+      background-image: url('images/map-320.jpg');
+    }
+  }
+
+  &__left::after {
+    @media (max-width: $screen-xsm) {
+      right: 45px;
+    }
+  }
+
+  &__left-wrapper {
+    @media (max-width: $screen-xsm) {
+      padding: 25px 20px 23px 19px;
+    }
+  }
+
+  &__left__title {
+    @media (max-width: $screen-xsm) {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+    }
+  }
+
+  &__left__address {
+    @media (max-width: $screen-xsm) {
+      max-width: 270px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__left__address__break {
+    @media (max-width: $screen-xsm) {
+      display: block;
+    }
+  }
+
+  &__left__phone {
+    @media (max-width: $screen-xsm) {
+      top: 8px;
+      left: -3px;
+    }
+  }
+
+  &__right {
+    @media (max-width: $screen-xsm) {
+      margin: 0 21px;
+    }
+  }
+
+  &__right__title {
+    @media (max-width: $screen-xsm) {
+      margin-bottom: 8px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__right__desc {
+    @media (max-width: $screen-xsm) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__right__input {
+    @media (max-width: $screen-xsm) {
+      padding: 11px 23px;
+    }
+  }
+
+  &__right__input::placeholder {
+    @media (max-width: $screen-xsm) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &__right__comment {
+    @media (max-width: $screen-xsm) {
+      padding: 12px 23px;
+    }
+  }
+
+  &__right__comment::placeholder {
+    @media (max-width: $screen-xsm) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}

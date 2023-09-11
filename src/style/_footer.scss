@@ -6,48 +6,19 @@
 
   &__container-top {
     @include setContainerBaseStyles;
+
     display: flex;
     padding-top: 24px;
     padding-bottom: 19px;
-
-    @media (max-width: $screen-md) {
-      padding: 24px 31px 23px 31px;
-    }
-
-    @media (max-width: $screen-sm) {
-      padding: 24px 27px 22px 27px;
-    }
-
-    @media (max-width: $screen-xsm) {
-      padding: 30px 25px 29px 25px;
-    }
   }
 
   &__container-bottom {
     display: none;
     background-color: $colorTooDarkGrey;
-
-    @media (max-width: $screen-xsm) {
-      display: block;
-      margin: 0 auto;
-      padding: 14px 25px 14px 25px;
-    }
   }
 
   &__logo {
-    margin-right: 201px;
-
-    @media (max-width: $screen-md) {
-      margin-right: 133px;
-    }
-
-    @media (max-width: $screen-sm) {
-      margin-right: auto;
-    }
-
-    @media (max-width: $screen-xsm) {
-      display: none;
-    }
+    margin: 0 201px 0 0;
   }
 
   &__logo-bottom {
@@ -57,17 +28,11 @@
   }
 
   &__logo__img {
-    margin-top: 2px;
-    margin-bottom: 2px;
-
-    @media (max-width: $screen-md) {
-      margin-top: 6px;
-      width: 166px;
-    }
+    margin: 2px 0;
   }
 
   &__logo__bottom__img {
-    margin-bottom: 5px;
+    margin: 0 0 5px 0;
     width: 110px;
   }
 
@@ -77,10 +42,6 @@
     font-size: 14px;
     line-height: 18px;
     color: $colorLightGrey;
-
-    @media (max-width: $screen-sm) {
-      width: 240px;
-    }
   }
 
   &__logo__bottom__desc {
@@ -99,21 +60,10 @@
     font-size: 16px;
     line-height: 22px;
     color: $colorGrey;
-
-    @media (max-width: $screen-sm) {
-      display: none;
-    }
-  }
-
-  &__social-media {
-    @media (max-width: $screen-xsm) {
-      margin: 0 auto;
-    }
   }
 
   &__social-media__title {
-    margin: 0;
-    margin-bottom: 8px;
+    margin: 0 0 8px 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -124,12 +74,13 @@
 
   &__social-media__list {
     @include clearListStyles;
+    
     display: flex;
     justify-content: center;
   }
 
   &__social-media__item:nth-child(1) {
-    margin-right: 20px;
+    margin: 0 20px 0 0;
   }
 
   &__social-media__svg path {

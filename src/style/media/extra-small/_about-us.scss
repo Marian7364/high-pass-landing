@@ -1,0 +1,59 @@
+@import '../../variables.scss';
+
+.about-us {
+  &__container {
+    @media (max-width: $screen-xsm) {
+      padding: 32px 21px 60px 21px;
+    }
+  }
+
+  &__title {
+    @media (max-width: $screen-xsm) {
+      margin-bottom: 1px;
+    }
+  }
+
+  &__desc {
+    @media (max-width: $screen-xsm) {
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+
+  &__wrapper__bg {
+    @media (max-width: $screen-xsm) {
+      margin-bottom: 25px;
+      height: 278px;
+      background-image: url('images/about-us-img-320.jpg');
+    }
+  }
+
+  &__wrapper__title {
+    @media (max-width: $screen-xsm) {
+      margin-bottom: 14px;
+      margin-left: -2px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  &__wrapper__input {
+    @media (max-width: $screen-xsm) {
+      padding: 11px 23px;
+      width: 278px;
+    }
+  }
+
+  &__wrapper__input::placeholder {
+    @media (max-width: $screen-xsm) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &__wrapper__btn {
+    @media (max-width: $screen-xsm) {
+      width: 115px;
+    }
+  }
+}

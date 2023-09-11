@@ -1,0 +1,22 @@
+@import '../../variables';
+
+.footer {
+  &__container-top {
+    @media (max-width: $screen-bg) {
+      padding: 24px 31px 23px 31px;
+    }
+  }
+
+  &__logo {
+    @media (max-width: $screen-bg) {
+      margin: 0 133px 0 0;
+    }
+  }
+
+  &__logo__img {
+    @media (max-width: $screen-bg) {
+      margin-top: 6px;
+      width: 166px;
+    }
+  }
+}

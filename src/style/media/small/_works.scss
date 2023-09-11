@@ -1,0 +1,60 @@
+@import '../../variables';
+
+.works {
+  &__container {
+    @media (max-width: $screen-sm) {
+      padding: 36px 27px 68px 27px;
+    }
+  }
+
+  &__left {
+    @media (max-width: $screen-sm) {
+      height: 452px;
+      background-image: url('images/neon-img-1-768.jpg');
+    }
+  }
+
+  &__left__sub-title {
+    @media (max-width: $screen-sm) {
+      margin: 0 0 14px -1px;
+    }
+  }
+
+  &__left__title {
+    @media (max-width: $screen-sm) {
+      margin: 0 0 24px -2px;
+      line-height: 31px;
+    }
+  }
+
+  &__right__title {
+    @media (max-width: $screen-sm) {
+      position: relative;
+      bottom: 2px;
+      margin: 0 0 16px 0;
+      font-size: 22px;
+      line-height: 23px;
+    }
+  }
+
+  &__right__bg-2 {
+    @media (max-width: $screen-sm) {
+      height: 228px;
+      background-image: url('images/neon-img-2-768.jpg');
+    }
+  }
+
+  &__right__bg-3 {
+    @media (max-width: $screen-sm) {
+      height: 133px;
+      background-image: url('images/neon-img-3-768.jpg');
+    }
+  }
+
+  &__right__bg-4 {
+    @media (max-width: $screen-sm) {
+      height: 133px;
+      background-image: url('images/neon-img-4-768.jpg');
+    }
+  }
+}

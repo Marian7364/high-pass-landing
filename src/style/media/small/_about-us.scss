@@ -1,0 +1,23 @@
+@import '../../variables';
+
+.about-us {
+  &__container {
+    @media (max-width: $screen-sm) {
+      padding: 30px 27px 62px 27px;
+    }
+  }
+
+  &__wrapper__bg {
+    @media (max-width: $screen-sm) {
+      margin-bottom: 21px;
+      height: 569px;
+      background-image: url('images/about-us-img-768.jpg');
+    }
+  }
+
+  &__wrapper__title {
+    @media (max-width: $screen-sm) {
+      margin-left: 1px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import '../../variables';
+
+.footer {
+  &__container-top {
+    @media (max-width: $screen-xsm) {
+      padding: 30px 25px 29px 25px;
+    }
+  }
+
+  &__container-bottom {
+    @media (max-width: $screen-xsm) {
+      display: block;
+      margin: 0 auto;
+      padding: 14px 25px 14px 25px;
+    }
+  }
+
+  &__logo {
+    @media (max-width: $screen-xsm) {
+      display: none;
+    }
+  }
+
+  &__social-media {
+    @media (max-width: $screen-xsm) {
+      margin: 0 auto;
+    }
+  }
+}

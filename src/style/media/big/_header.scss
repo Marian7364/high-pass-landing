@@ -1,0 +1,35 @@
+@import '../../header.scss';
+
+.header {
+  &__top {
+    @media (max-width: $screen-bg) {
+      padding: 26px 31px 27px 31px;
+    }
+  }
+
+  &__top__img {
+    @media (max-width: $screen-bg) {
+      margin: 0 75px 0 0;
+      width: 167px;
+    }
+  }
+
+  &__top__item {
+    @media (max-width: $screen-bg) {
+      margin: 0 23px 0 0;
+    }
+  }
+
+  &__top__search {
+    @media (max-width: $screen-bg) {
+      right: 31px;
+    }
+  }
+
+  &__top__search__icon {
+    @media (max-width: $screen-bg) {
+      position: relative;
+      top: 2px;
+    }
+  }
+}

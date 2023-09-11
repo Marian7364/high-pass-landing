@@ -1,0 +1,71 @@
+@import '../../variables';
+
+.works {
+  &__container {
+    @media (max-width: $screen-xsm) {
+      padding: 30px 21px 52px 21px;
+    }
+  }
+
+  &__left {
+    @media (max-width: $screen-xsm) {
+      height: 422px;
+      background-image: url('images/neon-img-1-320.jpg');
+    }
+  }
+
+  &__left__photo-tag {
+    @media (max-width: $screen-xsm) {
+      top: 7px;
+      right: 5px;
+      padding: 4px 7px;
+    }
+  }
+
+  &__left__sub-title {
+    @media (max-width: $screen-xsm) {
+      margin: 0 0 10px -1px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &__left__title {
+    @media (max-width: $screen-xsm) {
+      margin: 0 0 13px -2px;
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+
+  &__right__title {
+    @media (max-width: $screen-xsm) {
+      top: 3px;
+      bottom: 0;
+      margin: 0 0 18px 0;
+      font-size: 18px;
+      line-height: 19px;
+    }
+  }
+
+  &__right__bg-2 {
+    @media (max-width: $screen-xsm) {
+      height: 186px;
+      background-image: url('images/neon-img-2-320.jpg');
+    }
+  }
+
+  &__right__bg-3 {
+    @media (max-width: $screen-xsm) {
+      height: 105px;
+      background-image: url('images/neon-img-3-320.jpg');
+    }
+  }
+
+  &__right__bg-4 {
+    @media (max-width: $screen-xsm) {
+      height: 105px;
+      background-image: url('images/neon-img-4-320.jpg');
+    }
+  }
+}

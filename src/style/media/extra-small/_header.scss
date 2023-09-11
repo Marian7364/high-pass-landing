@@ -1,0 +1,61 @@
+@import '../../variables.scss';
+
+.header {
+  &__bottom--unactive {
+    @media (max-width: $screen-xsm) {
+      padding: 14px 27px 13px 21px;
+    }
+  }
+
+  &__bottom__burger--unactive {
+    @media (max-width: $screen-xsm) {
+      position: relative;
+      opacity: 1;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+  }
+
+  &__bottom__burger__list--unactive {
+    @media (max-width: $screen-xsm) {
+      display: none;
+    }
+  }
+
+  &__top {
+    @media (max-width: $screen-xsm) {
+      padding: 26px 21px;
+    }
+  }
+
+  &__top__img {
+    @media (max-width: $screen-xsm) {
+      width: 111px;
+    }
+  }
+
+  &__top__search {
+    @media (max-width: $screen-xsm) {
+      right: 21px;
+    }
+  }
+
+  &__top__search-input {
+    @media (max-width: $screen-xsm) {
+      width: 248px;
+    }
+  }
+
+  &__top__search__icon {
+    @media (max-width: $screen-xsm) {
+      top: 1px;
+    }
+  }
+
+  &__top__search__svg {
+    @media (max-width: $screen-xsm) {
+      width: 20px;
+    }
+  }
+}

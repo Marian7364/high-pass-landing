@@ -6,13 +6,14 @@
 
   &__top__input--unactive {
     position: absolute;
-    opacity: 0;
     right: 40px;
+    opacity: 0;
     transition: opacity .3s ease;
   }
 
   &__top__button--unactive {
     @include clearButtonStyles;
+
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -21,26 +22,20 @@
 
   &__bottom--unactive {
     @include setContainerBaseStyles;
+
     display: none;
     padding: 11px 27px 12px 27px;
     background-color: $colorTooDarkGrey;
     transition: all .4s ease;
-
-    @media (max-width: $screen-sm) {
-      display: block;
-    }
-
-    @media (max-width: $screen-xsm) {
-      padding: 14px 27px 13px 21px;
-    }
   }
 
   &__bottom__button--unactive {
     @include clearButtonStyles;
+
     position: absolute;
-    opacity: 0;
     width: 21px;
     height: 19px;
+    opacity: 0;
     transition: opacity .4s ease;
   }
 
@@ -48,14 +43,6 @@
     position: absolute;
     opacity: 0;
     transition: opacity .4s ease;
-
-    @media (max-width: $screen-xsm) {
-      position: relative;
-      opacity: 1;
-      width: 18px;
-      height: 18px;
-      cursor: pointer;
-    }
   }
 
   &__bottom__burger-line {
@@ -76,13 +63,14 @@
 
   &__bottom__list--unactive {
     @include clearListStyles;
+
     position: absolute;
     opacity: 0;
     transition: opacity .4s ease;
   }
 
   &__bottom__item:not(:last-child) {
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
   }
 
   &__bottom__item:nth-child(4) {
@@ -109,12 +97,12 @@
   &__bottom__item:nth-child(5) {
     position: relative;
     left: -3px;
-    margin-bottom: 214px;
+    margin: 0 0 214px 0;
     width: 82px;
   }
 
   &__bottom__link {
-    padding-left: 5px;
+    padding: 0 0 0 5px;
     font-family: 'TT Firs Neue', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -138,19 +126,12 @@
 
   &__bottom__burger__list--unactive {
     @include clearListStyles;
+
     display: none;
-
-    @media (max-width: $screen-sm) {
-      display: flex;
-    }
-
-    @media (max-width: $screen-xsm) {
-      display: none;
-    }
   }
 
   &__bottom__burger__item:not(:last-child) {
-    margin-right: auto;
+    margin: 0 auto 0 0;
   }
 
   &__bottom__burger__item:nth-child(1) {
@@ -174,7 +155,7 @@
   }
 
   &__bottom__burger__link {
-    padding-left: 5px;
+    padding: 0 0 0 5px;
     font-family: 'TT Firs Neue', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -185,61 +166,29 @@
 
   &__top {
     @include setContainerBaseStyles;
+
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-top: 25px;
     padding-bottom: 24px;
-
-    @media (max-width: $screen-md) {
-      padding: 26px 31px 27px 31px;
-    }
-
-    @media (max-width: $screen-sm) {
-      padding: 28px 27px 26px 28px;
-    }
-
-    @media (max-width: $screen-xsm) {
-      padding: 26px 21px;
-    }
   }
 
   &__top__img {
-    margin-right: 134px;
-
-    @media (max-width: $screen-md) {
-      margin-right: 75px;
-      width: 167px;
-    }
-
-    @media (max-width: $screen-sm) {
-      margin-right: auto;
-      width: 164px;
-    }
-
-    @media (max-width: $screen-xsm) {
-      width: 111px;
-    }
+    margin: 0 134px 0 0;
   }
 
   &__top__list {
     @include clearListStyles;
+
     display: flex;
     margin-right: auto;
-
-    @media (max-width: $screen-sm) {
-      display: none;
-    }
   }
 
   &__top__item {
     display: inline-block;
-    margin-right: 69px;
-
-    @media (max-width: $screen-md) {
-      margin-right: 23px;
-    }
+    margin: 0 69px 0 0;
   }
 
   &__top__item:nth-child(1) {
@@ -263,7 +212,7 @@
   }
 
   &__top__link {
-    padding-left: 5px;
+    padding: 0 0 0 5px;
     font-family: 'TT Firs Neue', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -279,22 +228,10 @@
     align-items: center;
     background-color: $colorLightBlack;
     transition: all .3s ease;
-
-    @media (max-width: $screen-md) {
-      right: 31px;
-    }
-
-    @media (max-width: $screen-sm) {
-      right: 28px;
-    }
-
-    @media (max-width: $screen-xsm) {
-      right: 21px;
-    }
   }
 
   &__top__search-input {
-    margin-right: 9px;
+    margin: 0 9px 0 0;
     border: none;
     width: 308px;
     font-family: 'TT Firs Neue', sans-serif;
@@ -305,10 +242,6 @@
     background: none;
     border-bottom: 1px solid $colorLightGrey;
     transition: all .3s ease;
-
-    @media (max-width: $screen-xsm) {
-      width: 248px;
-    }
   }
 
   &__top__search-input::placeholder {
@@ -321,28 +254,10 @@
 
   &__top__search__icon {
     @include clearButtonStyles;
-    cursor: pointer;
+
     position: relative;
     opacity: 1;
+    cursor: pointer;
     transition: opacity .3s ease;
-
-    @media (max-width: $screen-md) {
-      position: relative;
-      top: 2px;
-    }
-
-    @media (max-width: $screen-sm) {
-      top: 0;
-    }
-
-    @media (max-width: $screen-xsm) {
-      top: 1px;
-    }
-  }
-
-  &__top__search__svg {
-    @media (max-width: $screen-xsm) {
-      width: 20px;
-    }
   }
 }

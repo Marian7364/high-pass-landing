@@ -1,0 +1,46 @@
+@import '../../variables.scss';
+
+.header {
+  &__bottom--unactive {
+    @media (max-width: $screen-sm) {
+      display: block;
+    }
+  }
+
+  &__bottom__burger__list--unactive {
+    @media (max-width: $screen-sm) {
+      display: flex;
+    }
+  }
+
+  &__top {
+    @media (max-width: $screen-sm) {
+      padding: 28px 27px 26px 28px;
+    }
+  }
+
+  &__top__img {
+    @media (max-width: $screen-sm) {
+      margin: 0 auto 0 0;
+      width: 164px;
+    }
+  }
+
+  &__top__list {
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+  }
+
+  &__top__search {
+    @media (max-width: $screen-sm) {
+      right: 28px;
+    }
+  }
+
+  &__top__search__icon {
+    @media (max-width: $screen-sm) {
+      top: 0;
+    }
+  }
+}
