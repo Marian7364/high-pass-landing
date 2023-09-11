@@ -1,13 +1,13 @@
 {
   "name": "high-pass-landing",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple landing that uses grid system to make it possible to position pictures beautifully and gulp task-manager for automating repetitive tasks especially minimazing images",
   "main": "main.js",
   "scripts": {
     "start": "npx gulp"
   },
   "keywords": [],
-  "author": "",
+  "author": "Marian",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.20.2",
